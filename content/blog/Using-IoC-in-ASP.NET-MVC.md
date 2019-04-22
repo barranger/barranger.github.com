@@ -1,7 +1,7 @@
 ---
 title: Using IoC in ASP.NET MVC
 date: "2019-04-22T23:46:37.121Z"
-description: Using IoC in ASP.NET MVC
+description: The reasons to use IoC are numerous, but specifically for ASP.NET it will allow you to keep code isolated into functional components, and allow you to migrate those functional components to newer/more appropriate technologies.
 ---
 
 ## Why use IoC
