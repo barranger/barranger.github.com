@@ -1,0 +1,35 @@
+{
+  "name": "barranger-s-dev-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "barranger-s-dev-blog",
+  "author": "Barranger Ridler",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.0",
+    "autoprefixer": "^10.4.20",
+    "gatsby": "^5.14.1",
+    "gatsby-plugin-google-gtag": "^5.14.0",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-manifest": "^5.14.0",
+    "gatsby-plugin-mdx": "^5.14.0",
+    "gatsby-plugin-postcss": "^6.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-sitemap": "^6.14.0",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "postcss": "^8.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
