@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barranger Ridler — Software Architect</title>
+  <meta name="description" content="Barranger Ridler is a senior software architect and full-stack developer in Toronto, building e-commerce tools for Shopify merchants.">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --text: #1c1c1a;
+      --muted: #6b6b66;
+      --accent: #0b6e4f;
+      --border: #e4e4e0;
+      --card: #ffffff;
+    }
+    :root[data-theme="dark"] {
+      --bg: #14141a;
+      --text: #e8e8e4;
+      --muted: #9a9aa0;
+      --accent: #4cc296;
+      --border: #2a2a32;
+      --card: #1c1c24;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #14141a;
+        --text: #e8e8e4;
+        --muted: #9a9aa0;
+        --accent: #4cc296;
+        --border: #2a2a32;
+        --card: #1c1c24;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .tagline {
+      color: var(--muted);
+      margin-top: 0.35rem;
+      font-size: 1.05rem;
+    }
+    #theme-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1;
+    }
+    #theme-toggle:hover { border-color: var(--accent); }
+    section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    p + p { margin-top: 0.75rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .work-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin-bottom: 0.75rem;
+    }
+    .work-item strong { display: block; margin-bottom: 0.15rem; }
+    .work-item span { color: var(--muted); font-size: 0.95rem; }
+    ul.links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Barranger Ridler</h1>
+        <p class="tagline">Senior Software Architect &amp; Full-Stack Developer</p>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>I'm a software architect based in Toronto, Ontario. I build e-commerce tools that help Shopify merchants turn transactional moments into revenue — and I've spent my career shipping full-stack products from first commit to scale.</p>
+      <p>Lately, much of my work centers on AI: building agentic workflows and AI-powered features into products, and using LLM tooling to change how software gets designed, built, and shipped.</p>
+    </section>
+
+    <section>
+      <h2>Work</h2>
+      <div class="work-item">
+        <strong><a href="https://www.refersion.com">Refersion</a></strong>
+        <span>Engineering Manager — affiliate and influencer marketing for e-commerce brands. I've overhauled the architecture (goodbye legacy VMs, and 80% of the server bill with them), moved the front end from Angular to Vue, worn the product-manager hat for one Shopify app, and taken another from idea to launch in four weeks.</span>
+      </div>
+      <div class="work-item">
+        <strong><a href="https://apps.shopify.com/spently">UpOrder (formerly Spently)</a></strong>
+        <span>Principal Software Developer — a Shopify app that turns transactional emails into a repeat-purchase channel. I broke a legacy ASP.NET monolith apart into a serverless architecture, led the move to a React front end, and helped shift the team to Agile — all while nudging code quality and infrastructure costs in the right direction.</span>
+      </div>
+      <div class="work-item">
+        <strong><a href="https://www.redbitdev.com">RedBit</a></strong>
+        <span>Senior Software Architect — seven years of client work across React, React Native, Xamarin, ASP.NET APIs, and Azure DevOps pipelines. Lots of new technologies, tight deadlines, and mentoring along the way.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Elsewhere</h2>
+      <ul class="links">
+        <li><a href="https://github.com/barranger">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/barranger/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/barrangers_adventure_bag">Instagram</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Barranger Ridler · Toronto, Ontario</p>
+    </footer>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved) root.dataset.theme = saved;
+
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const current = root.dataset.theme || (prefersDark ? 'dark' : 'light');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem('theme', next);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
